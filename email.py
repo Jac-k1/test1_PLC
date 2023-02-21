@@ -1,6 +1,6 @@
 import re
 
-regex = '[a-zA-Z0-9.]+@[a-zA-Z0-9.-]+\.[a-zA-Z]+'
+regex = '[a-zA-Z0-9.#%$&+*-/=?^_{|}!]+@[a-zA-Z0-9.-]+\.[a-zA-Z]+'
 
 
 def is_email(email):
@@ -14,7 +14,7 @@ email_1 = "yesiamemail@gmail.com"
 
 email_2 = "?!?!?iamnotemail.com"
 
-email_3 = "oh.boy.would.you@look-at--the.time.org"
+email_3 = "oh.boy.wo!uld.you@look-at--the.time.org"
 
 is_email(email_1)
 is_email(email_2)
