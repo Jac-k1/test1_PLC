@@ -1,6 +1,9 @@
 import re
 
-regex = '^[0-9a-fA-FxXiIlLuU]*'
+regex = '([0-9]|[1-9][0-9]*|[0-7]+|0[xX][0-9a-fA-F]+)(i|I64|u|U|i|L|l|Ui64)?'
+'''
+'^[0-9a-fA-FxXiIlLuU]*'
+'''
 
 def is_int(number):
     if(re.fullmatch(regex, number)):
